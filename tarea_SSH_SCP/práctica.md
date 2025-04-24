@@ -64,7 +64,7 @@ Con la máquina B se hará lo mismo, cambiando el nombre del usuario a crear por
   ```
   y nos pondrá información del servicio.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Para que toda la práctica funcione, tendremos que tener instalado el servicio ssh.
 
   ![Imagen 3 Máquina B](imagenes/B3.png)
