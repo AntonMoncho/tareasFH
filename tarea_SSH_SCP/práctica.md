@@ -16,8 +16,9 @@ Máquina B
 
 Ahora se configurarán los adaptadores de red interna para darles una dirección IP y una máscara para que estén en la misma red y sean accesibles.
 
-Para dar una IP y una máscara usaremos el comando 
-'''
+Para dar una IP y una máscara usaremos el comando
+
+'''shell
   ip a a \[192.168.1.2/24\] dev enp0s8
 '''
 Pero esta configuración se perderá al reiniciar la máquina; por lo tanto, crearemos un archivo de configuración en la carpeta /etc/netplan, al que llamaremos “02-enp0s8.yaml” en el que escribiremos la configuración de la ip fija para este adaptador en cada máquina, para aplicar esta configuración ejecutaremos el comando “netplan apply”.
