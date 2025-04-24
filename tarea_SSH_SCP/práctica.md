@@ -1,6 +1,6 @@
 # Tarea SSH y SCP
 
-##Crea dos máquinas virtuales y realiza el siguiente proceso.
+## Crea dos máquinas virtuales y realiza el siguiente proceso.
 
 Primero creamos las máquinas y las configuramos. Cada máquina tendrá un adaptador de red NAT “enp0s3” (para la conexión a Internet y con el anfitrión) y un adaptador de red “enp0s8” interna para conectar las máquinas entre ellas.
 
