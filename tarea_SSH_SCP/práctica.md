@@ -25,7 +25,8 @@ Para dar una IP y una máscara usaremos el comando
 ```bash
   ip a a \[192.168.1.2/24\] dev enp0s8
 ```
-Pero esta configuración se perderá al reiniciar la máquina; por lo tanto, crearemos un archivo de configuración en la carpeta /etc/netplan, al que llamaremos “02-enp0s8.yaml” en el que escribiremos la configuración de la ip fija para este adaptador en cada máquina.
+Pero esta configuración se perderá al reiniciar la máquina; por lo tanto, crearemos un archivo de configuración en la carpeta /etc/netplan, al que llamaremos “02-enp0s8.yaml” en el que escribiremos la configuración de la ip fija para este adaptador en cada máquina.  
+
 ![Imagen 2 Máquina A](imagenes/A2.png)
 
 ![Imagen 3 Máquina A](imagenes/A3.png)
@@ -138,7 +139,7 @@ Con la máquina B se hará lo mismo, cambiando el nombre del usuario a crear por
 
 * Genera un par de claves en el cliente y haz la conexión con el servidor. Crea el passphrase \= servidorssh.
 
-  Para generar un par de claves en la máquina B (cliente), ejecutaremos el comando  “ssh-keygen \-t rsa” y introduciremos “servidorssh” en el campo passphrase cuando se nos pregunte.
+  Para generar un par de claves en la máquina B (cliente), ejecutaremos el comando  “ssh-keygen \-t rsa” y introduciremos “servidorssh” en el campo passphrase cuando se nos pregunte.  
 
   Veremos que la ruta de guardado por defecto del par de claves será /home/brais/.ssh/id\_rsa
 
@@ -149,7 +150,7 @@ Con la máquina B se hará lo mismo, cambiando el nombre del usuario a crear por
   ssh-copy-id \-i .ssh/id\_rsa.pub alex@192.168.1.2
   ```
 
-  Posteriormente, al iniciar sesión desde la máquina B en el servidor veremos que ya no pide la contraseña del usuario, sino el fingerprint que hemos introducido “servidorssh”
+  Posteriormente, al iniciar sesión desde la máquina B en el servidor veremos que ya no pide la contraseña del usuario, sino el fingerprint que hemos introducido “servidorssh”  
 
   ![Imagen 6 Máquina B](imagenes/B6.png)
 
