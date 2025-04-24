@@ -8,7 +8,7 @@ Podremos ver las configuraciones actuales de los adaptadores con el comando “i
 
 Máquina A
 
-! (imagenes/A1.png)
+![Imagen 1 Máquina A](imagenes/A1.png)
 
 Máquina B
 
