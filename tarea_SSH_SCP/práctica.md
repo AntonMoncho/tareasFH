@@ -4,7 +4,10 @@
 
 Primero creamos las máquinas y las configuramos. Cada máquina tendrá un adaptador de red NAT “enp0s3” (para la conexión a Internet y con el anfitrión) y un adaptador de red “enp0s8” interna para conectar las máquinas entre ellas.
 
-Podremos ver las configuraciones actuales de los adaptadores con el comando “ip \-c a”
+Podremos ver las configuraciones actuales de los adaptadores con el comando
+```shell
+“ip \-c a”
+```
 
 Máquina A
 
