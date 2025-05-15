@@ -43,7 +43,7 @@ Facemos “ls /dev” para buscar os dispositivos conectados ao equipo e buscamo
 Usaremos “CHROOT” para modificar o directorio raíz do live do kali para cargar o sistema de ficheiros do Debian (/dev/sda), e para eso imos crear unh directorio na ruta onde imos montar a información 
 
 ```bash
-mkdir /mnt/recuperar && ls \-ld /mnt/recuperar
+mkdir /mnt/recuperar && ls -ld /mnt/recuperar
 ```  
 
 Despois montamos o disco dev/sda1 en /mnt/recuperar  
