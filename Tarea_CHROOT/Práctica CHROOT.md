@@ -26,7 +26,11 @@ Ahora volveremos a arrancar a máquina e, se non se inicia automáticamente o Ka
 
 Iniciamos dende o instalador de Kali, xa que arranca un Live.  
 
-Poñenos a distribución do teclado en castelán “setxkbmap es”  
+Poñenos a distribución do teclado en castelán 
+
+```bash
+setxkbmap es
+```
 
 Iniciamos sesión como root “sudo su \-”  
 
@@ -36,7 +40,11 @@ Facemos “ls /dev” para buscar os dispositivos conectados ao equipo e buscamo
 
 ![image9](images/image9.png)
 
-Usaremos “CHROOT” para modificar o directorio raíz do live do kali para cargar o sistema de ficheiros do Debian (/dev/sda), e para eso imos crear unh directorio na ruta onde imos montar a información “mkdir /mnt/recuperar && ls \-ld /mnt/recuperar”  
+Usaremos “CHROOT” para modificar o directorio raíz do live do kali para cargar o sistema de ficheiros do Debian (/dev/sda), e para eso imos crear unh directorio na ruta onde imos montar a información 
+
+```bash
+mkdir /mnt/recuperar && ls \-ld /mnt/recuperar
+```  
 
 Despois montamos o disco dev/sda1 en /mnt/recuperar  
 
@@ -48,19 +56,23 @@ Ahora vemos que temos a raíz do debian en /mnt/recuperar
 
 Para poder usar como raíz o directorio /recuperar, precisamos montar os directorios “**/proc**”, “**/sys**” e ”**/dev**” do Kali dentro da carpeta /recuperar. Facendo o proceso de montaxe.  
 
-![image12](images/image12.png)
+![image12](images/image12.png)  
 
-Ahora usamos o comando “chroot /mnt/recuperar /bin/bash”  
+Ahora usamos o comando  
 
-![image13](images/image13.png)
+```bash
+chroot /mnt/recuperar /bin/bash
+```
 
-Podemos comprobar que os ficheiros nos que estamos son os do Debian, vendo, por exemplo os usuarios do ficheiro /etc/passwd
-![image14](images/image14.png)
-Vendo que somos root en Debian, podendo cambiarlle a contraseña ao usuario do debian:
+![image13](images/image13.png)  
+
+Podemos comprobar que os ficheiros nos que estamos son os do Debian, vendo, por exemplo os usuarios do ficheiro /etc/passwd  
+![image14](images/image14.png)  
+Vendo que somos root en Debian, podendo cambiarlle a contraseña ao usuario do debian:  
 
 antes “abc123.” e ahora “ABC123.”  
 
-![image15](images/image15.png)
+![image15](images/image15.png)  
 
 Ahora volvemos a arrancar o Debian, quitando o disco do Kali para que arranque Debian.  
 
